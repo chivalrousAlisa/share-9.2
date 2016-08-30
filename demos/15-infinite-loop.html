@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Swiper demo</title>
+    <title>前端成长之路</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Link Swiper's CSS -->
@@ -38,6 +38,7 @@
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+        flex-flow:column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         -webkit-justify-content: center;
@@ -47,22 +48,77 @@
         -webkit-align-items: center;
         align-items: center;
     }
+        .lists li{
+            width:250px;
+            text-align:left;
+        }
+        .listsd li{
+            width:150px;
+            text-align:left;
+        }
     </style>
 </head>
 <body>
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide">
+                <h5>我的第一个Demo:(项目背景、技术)</h5>
+                <div>
+                    <a href="#">https:www</a>
+                </div>
+                <h5>观点：技术遗忘</h5>
+            </div>
+            <div class="swiper-slide">
+                <h5>css3 3d动画制作：立方体、双螺旋：<a href="#">https:www</a></h5>
+                <h5 style="width:280px;text-align: left;padding:0;margin:0;">干货：(属性-空间想象)</h5>
+                <ul class="lists">
+                    <li>transform: rotate translate scale x,y,z</li>
+                    <li>transform-style: preserve-3d;</li>
+                    <li>transform-origin</li>
+                    <li>perspective；</li>
+                    <li>perspective-origin</li>
+                </ul>
+            </div>
+            <div class="swiper-slide">
+                <h5>h5招聘页面：<a href="#">https:www</a></h5>
+                <h5 style="width:173px;text-align: left;padding:0;margin:0;">干货：</h5>
+                <ul class="listsd">
+                    <li>布局技巧</li>
+                    <li>js width height</li>
+                    <li>平台检测</li>
+                </ul>
+            </div>
+            <div class="swiper-slide">
+                <h5>第一个react项目（项目背景、实现）：<a href="#">https:www</a></h5>
+                <h5>观点：框架学什么？（思想，思维，语法糖，知识点）</h5>
+                <h5 style="width:435px;text-align: left;padding:0;margin:0;">react干货：(组件通信/props,state,ref,生命周期：getInitialState)</h5>
+                <ul class="listsd">
+                    <li>父传子 props</li>
+                    <li>子传父 callback</li>
+                    <li>子组件间：可以不存在，</li>
+                </ul>
+                <h5 style="width:173px;text-align: left;padding:0;margin:0;">踩过的坑：(事件机制)</h5>
+            </div>
+            <div class="swiper-slide">
+                <h5>浅谈antd</h5>
+            </div>
+            <div class="swiper-slide">
+                <h5>其他干货</h5>
+                <ul>
+                    <li>props attr</li>
+                    <li>react key</li>
+                </ul>
+            </div>
+            <div class="swiper-slide">
+                <h5>总结（技术革新）：your are the owner of your career</h5>
+                <h5>知识（20%）：标准（基础）、技术（一些框架，学思想，本质）</h5>
+                <h5>能力（80%，重要，稳定）：（编程能力：算法，数据结构等；架构能力；工程能力）</h5>
+            </div>
+            <div class="swiper-slide">
+                <h4>OVER</h4>
+                <H4>Thanks!</H4>
+            </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -83,7 +139,7 @@
         slidesPerView: 1,
         paginationClickable: true,
         spaceBetween: 30,
-        loop: true
+        loop: false
     });
     </script>
 </body>
